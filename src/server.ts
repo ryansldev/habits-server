@@ -9,4 +9,4 @@ app.get('/hello', () => {
 app.listen({
   port: Number(process.env.PORT),
   host: process.env.HOST,
-})
+}).then(() => console.log('HTTP Server running!'))
